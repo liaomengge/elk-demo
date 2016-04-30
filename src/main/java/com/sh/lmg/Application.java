@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 public class Application {
 
     private static final Logger _log = Logger.getLogger(Application.class);
-    private static final String REDIS_KEY = "logstash:redis";
+    private static final String REDIS_KEY = "logstash:redis";// 此处的key必须和logstash中定义的key一致
 
     public static void main(String[] args) throws InterruptedException {
         _log.info("hello, world");
