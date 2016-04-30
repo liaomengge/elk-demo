@@ -12,8 +12,8 @@ public class Application {
     private static final String REDIS_KEY = "logstash:redis";// 此处的key必须和logstash中定义的key一致
 
     public static void main(String[] args) throws InterruptedException {
-        _log.info("hello, world");
-        JedisUtil.rpushKey(REDIS_KEY, "liaomengge".getBytes());
+        _log.error("zhangqingming");
+        JedisUtil.rpushKey(REDIS_KEY, "liaomengge".getBytes());//这里仅做demo, 此处配置, 可以将redis作为中间队列配置
         System.out.println("init success");
     }
 }
